@@ -1,0 +1,7 @@
+fragment Task on Task {
+  id
+  user_id
+  context
+  date
+  donekk
+}

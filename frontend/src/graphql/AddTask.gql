@@ -1,0 +1,7 @@
+#import "./TaskFragment.gql"
+
+mutation addTask ($input: TaskInput!) {
+  addTask (input: $input) {
+    ...Task
+  }
+}
