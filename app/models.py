@@ -22,7 +22,9 @@ class User(Base):
             primary_key=True,
             autoincrement=True,
         )
-    username = Column('username', String(256))
+    name = Column('name', String(256), nullable=False)
+    password = Column('password', String(256))
+    email = Column('mail', String(256), nullable=False)
 
 class Task(Base):
     __tablename__ = 'task'

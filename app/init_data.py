@@ -3,9 +3,9 @@
 from models import engine, db_session, Base, User, Task
 Base.metadata.create_all(bind=engine)
 
-taro = User(username='Taro')
+taro = User(name='Taro', email='taro@test.com')
 db_session.add(taro)
-hanako = User(username='Hanako')
+hanako = User(name='Hanako', email='hanako@test.com')
 db_session.add(hanako)
 
 task1 = Task(
